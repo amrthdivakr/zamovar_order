@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zamovar</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        outline: none;
+      }
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+          330.65deg,
+          #0f0f0f 0%,
+          rgba(15, 15, 15, 0.8) 100%
+        );
+        overflow: hidden;
+      }
+      .main {
+        width: 100vw;
+        height: 100%;
+        position: relative;
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-rows: 2fr 2fr 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+        /* grid-template-rows: 5fr 1fr; */
+        overflow: hidden;
+      }
+
+      .logo {
+        display: block;
+        max-width: 100%;
+        width: 100px;
+        justify-self: center;
+      }
+
+      .logo img {
+        display: block;
+        max-width: 80vw;
+        width: 100px;
+        height: inherit;
+        /* width: 200px; */
+      }
+
+      .bt-container {
+        height: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        height: 100%;
+      }
+
+      .container {
+        width: 200px;
+        height: 100%;
+        background: rgb(236, 244, 255);
+        border-radius: 30px;
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        background: linear-gradient(135.74deg, #424242 0%, #1c1c1c 101.32%);
+      }
+
+      .container p {
+        font-weight: 200;
+        color: white;
+        padding: 0 20px;
+        text-align: left;
+        align-self: flex-start;
+      }
+
+      .img-container {
+        width: 100%;
+        padding: 5px;
+      }
+
+      .img-container img {
+        width: inherit;
+      }
+
+      .buttons a {
+        display: flex;
+        padding: 10px 11px;
+        margin: 10px;
+        /* background: black; */
+        color: #d7e5ff;
+        border-radius: 30px;
+        background: linear-gradient(135.74deg, #424242 0%, #1c1c1c 101.32%);
+      }
+
+      .main .addr {
+        display: inline-flex;
+        width: fit-content;
+        justify-self: center;
+        /* padding: 0 10px; */
+      }
+
+      .addr-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .addr p {
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0;
+        /* padding: 0 20px; */
+        padding-left: 10px;
+        text-align: left;
+        width: 70vw;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="logo">
+        <img src="zamovar-logo-white.png" alt="Zamovar logo" />
+      </div>
+
+      <div class="bt-container">
+        <div class="buttons">
+          <div class="container z-container">
+            <p>Order Now</p>
+            <div class="img-container">
+              <img src="zomato.png" alt="" />
+            </div>
+            <a
+              id="zomato"
+              href="https://www.zomato.com/kochi/zamovar-kalamassery"
+              ><span
+                class="iconify"
+                data-inline="false"
+                data-icon="mdi-light:cart"
+                style="color:rgba(255, 255, 255, 0.7); font-size: 24px;"
+              ></span
+            ></a>
+          </div>
+          <div class="container s-container">
+            <p>Order Now</p>
+            <div class="img-container">
+              <img src="swiggy.png" alt="" />
+            </div>
+            <a
+              id="swiggy"
+              href="https://www.swiggy.com/restaurants/zamovar-kalamassery-kochi-284467"
+              ><span
+                class="iconify"
+                data-inline="false"
+                data-icon="mdi-light:cart"
+                style="color:rgba(255, 255, 255, 0.7); font-size: 24px;"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://g.page/zamovar?share" class="addr">
+        <div class="addr-icon">
+          <span
+            class="iconify"
+            data-inline="false"
+            data-icon="ei:location"
+            style="color: #ffffff; font-size: 35px;"
+          ></span>
+        </div>
+        <div class="addr-content">
+          <p>
+            CUSAT, Corrazone; 420 St Seaport Airport Road, Pipeline Cross Rd,
+            Kalamassery, Kerala 682022
+          </p>
+        </div>
+      </a>
+    </section>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  </body>
+</html>
