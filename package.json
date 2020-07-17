@@ -4,8 +4,8 @@
   "description": "This is a static template with no bundling",
   "main": "index.html",
   "scripts": {
-    "start": "serve",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,10 @@
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
     "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "gsap": "^3.4.0",
+    "parcel-bundler": "^1.12.4",
+    "smooth-scrollbar": "^8.5.2"
   }
 }
